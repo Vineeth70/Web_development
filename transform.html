@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body{
+            top:150px;
+            display: flex;
+            justify-content: center;
+            background: -webkit-radial-gradient();
+            background-repeat: no-repeat;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .container{
+            top:70px;
+            height: 300px;
+            width: 30px;
+            position: relative;
+            background-color: #393B39;
+            box-shadow: 10px 10px 5px rgb(176, 108, 108);
+            border:2px solid blue;
+            transform-origin: top center;
+            animation: rot 0.4s infinite linear;
+        }
+        @keyframes rot{
+            0% {transform: rotate(0deg);}
+            100%{transform:rotate(360deg);}
+        }
+        .stick{
+            top:50px;
+            position: absolute;
+            height: 400px;
+            width: 30px;
+            background-color: #F5BCB0;
+            box-shadow: 10px 10px 5px rgb(176, 108, 108);
+            border-radius: 15px;
+            z-index: -1;
+        }
+        @keyframes rot2{
+            0% {transform: rotate(0deg);}
+            100%{transform:rotate(-360deg);}
+        }
+        .c2{
+            animation: rot2 0.4s infinite linear;
+        }
+        .c3{
+            position: absolute;
+            top:400px;
+            
+            animation: rot 0.4s infinite linear;
+        }
+        .c4{
+            position: absolute;
+            top:400px;
+            animation: rot2 0.4s infinite linear;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+    </div>
+     <div class="container c2">
+        
+    </div>
+    <div class="container c3"></div>
+    <div class="container c4"></div>
+    <div class="stick"></div>
+</body>
+</html>
