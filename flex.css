@@ -1,0 +1,43 @@
+/* .parent{
+    display: flex;
+    background-color: aquamarine;
+
+}
+
+.child{
+    background-color: brown;
+    flex-basis: auto;
+}
+.c1{
+   background-color: antiquewhite;
+   border: 2px solid black;
+   flex-basis: auto; 
+   flex-grow: 1;
+}
+.c2{
+   background-color: rgb(215, 221, 250);
+   border: 2px solid black;
+   flex-basis: auto; 
+   flex-grow: 2;
+}
+.c3{
+   background-color: rgb(168, 27, 83);
+   border: 2px solid black;
+   flex-basis: auto; 
+   flex-grow: 1;
+} */
+
+.parent{
+    display: flex;
+    border: 2px solid red;
+    align-items: start;
+    flex-wrap: wrap;
+
+}
+
+.child{
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+    margin: 10px;
+}

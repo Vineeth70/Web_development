@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            background: linear-gradient(30deg,rgb(89, 182, 143),rgb(6, 15, 110) , red);
+        }
+        .pa{
+            text-wrap: wrap;
+            font-size: 1rem;
+            border: 3px solid black;
+            height: 100vh;
+        }
+        @media (max-width : 480px){
+            .pa{
+                background:linear-gradient(30deg ,red, yellow);
+            }
+        }
+        @media(min-width : 481px) and (max-width : 720px){
+            .pa{
+                background:linear-gradient(30deg ,rgb(108, 123, 157) ,rgb(118, 118, 3));
+            }
+        }
+        @media(min-width : 721px) and (max-width : 1024px){
+            .pa{
+                background:linear-gradient(30deg, rgb(60, 108, 219), rgb(177, 220, 35));
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <pre class="pa">
+        <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Rem ipsum laudantium voluptatem quis, provident mollitia sint, laboriosam expedita ab nulla ullam maxime. 
+
+        Tempora, eligendi quia velit enim sequi, modi aliquam dolorum beatae exercitationem ducimus ipsum illum eaque? Perspiciatis temporibus quaerat esse 
+        consequuntur rem suscipit accusantium libero exercitationem eveniet molestiae?
+        In sapiente aspernatur vitae exercitationem repellendus esse ipsam consequuntur, corrupti modi, ipsum eaque. 
+        Non amet esse vel assumenda, dolore porro ipsa, laboriosam, reiciendis sunt praesentium facilis earum libero molestiae magni nisi.
+        </p>
+    </pre>
+</body>
+</html>
