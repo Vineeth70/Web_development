@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+
+    .box{
+        display: flex;
+        align-items: center;
+        color: aliceblue;
+        font-size: 3rem;
+        justify-content: center;
+        height: 200px;
+        width: 200px;
+        position: relative;
+        background-color: #393B39;
+        box-shadow: 10px 10px 5px rgb(176, 108, 108);
+        border:2px solid blue;
+        animation: box-animation 3s infinite;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate-reverse;
+
+    }
+    @keyframes box-animation{
+        0%{
+            top: 0px;
+            left: 0px;
+            rotate: 45deg;
+            transform: scale(1);
+        }
+        25%{
+            top: 0px;
+            left: 500px;
+            rotate: -45deg;
+            transform: scale(1.5);
+        }
+        50%{
+            top: 500px;
+            left: 500px;
+            rotate: 90deg;
+            transform: scale(1.7);
+        }
+        75%{
+            top: 500px;
+            left:0px;
+            rotate: -120deg;
+            transform: scale(1.9);
+        }
+        100%{
+            top: 0px;
+            left: 0px;
+            rotate: 240deg;
+            transform: scale(0.5);
+        }
+    }    
+   </style>
+</head>
+<body>
+     <div class="box"><span>Hello</span></div>
+</body>
+</html>
